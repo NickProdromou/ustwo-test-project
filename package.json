@@ -1,0 +1,21 @@
+{
+  "name": "ustwo-test-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.15.0",
+    "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "install": "^0.8.1",
+    "mocha": "^3.0.2",
+    "npm": "^3.10.7"
+  }
+}
