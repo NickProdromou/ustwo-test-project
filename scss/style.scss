@@ -1,12 +1,135 @@
+// global styles
+@import 'normalize';
+
+//variables
+$bg-color: #37454E;
+$form-fields: #69737C;
+$border: #8D94A0;
+
+
+* {
+  box-sizing: border-box;
+  color: #fff;
+  font-family: 'open-sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
 h1 {
-  color : $sams_color;
+  position: relative;
+  top: -33px;
+  background: #37454E;
+  width: 100%;
+  padding: 2px;
+  display: inline;
 }
 
 body {
-  background: #fff;
+  background: $bg-color;
 }
 
-div {
-  background: #eee;
-  color: #fff;
+form {
+  max-width: 550px;
+  margin: 2em auto;
+  padding: 1em;
+  border: 2px solid $border;
+  @media screen and (max-width:600px) {
+    border: none;
+  }
+}
+
+fieldset {
+  border: none;
+}
+
+
+input {
+  background: $form-fields;
+  border: 1px solid $border;
+  display: block;
+}
+
+textarea {
+  background: $form-fields;
+  width: 100%;
+}
+
+.contact-details {
+  input {
+    width: 100%;
+    margin: .8em 0;
+    padding: .6em;
+  }
+  label {
+    font-size: .9em;
+    letter-spacing: .12em;
+    display: block;
+    font-weight: 600;
+  }
+}
+
+.cake-details {
+    margin-top: .8em;
+  input {
+    display: inline-block;
+  }
+  label:not(.group-title) {
+    display: inline-block;
+    font-weight: 200;
+    line-height: 1.5em;
+    margin-left: .6em;
+  }
+}
+
+.celebration-details {
+  margin-top: .8em;
+  input {
+    display: inline-block;
+  }
+  label:not(.group-title) {
+    display: inline-block;
+    font-weight: 200;
+    margin-left: .6em;
+  }
+  input, label {
+    line-height: 1.4em;
+  }
+  input[type="text"] {
+    margin: .6em 0;
+  }
+  label[for="dream_cake"] {
+    margin-left: 0;
+    margin: .6em 0;
+    font-weight: bold;
+  }
+  input[name="other"] {
+    width: 100%;
+  }
+}
+
+.form-confirm {
+  margin: 1.2em 0;
+  input {
+    display: inline-block;
+  }
+  input[type="submit"] {
+    background: none;
+    border: .2em solid #fff;
+    padding: .225em .4em;
+  }
+
+  input[type="reset"] {
+    background: none;
+    border: none;
+    text-decoration: underline;
+    color: $border;
+    font-size: .877em;
+  }
+}
+
+
+
+.group-title {
+  margin: .8em 0;
+  font-weight:600;
+  display: block;
 }

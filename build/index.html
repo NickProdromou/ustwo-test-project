@@ -11,7 +11,6 @@
 
 <body>
 
-<div class="page-container">
   <form>
     <h1>Cake Enquiry Form</h1>
     <fieldset>
@@ -24,31 +23,33 @@
       </div>
 
       <div class="cake-details">
-        <label>Type of cake:</label><br>
-        <input type="checkbox" value="type_cupcakes" id="cupcakes" name="cupcakes" /><label for="cupcakes">Cupcakes</label> <br>
-        <input type="checkbox" value="type_cheescakes" id="cheesecakes" name="cheesecakes"/><label for="cheesecakes">Cheesecakes</label> <br>
-        <input type="checkbox" value="type_butter-cakes" id="butter_cakes" name="buttercakes" /><label for="butter-cakes">Butter Cakes</label> <br>
-        <input type="checkbox" value="type_mudcakes" id="mudcakes" name="mudcakes" /><label for="mudcakes">Mudcakes</label> <br>
+        <label class="group-title">Type of cake:</label>
+        <input type="checkbox" value="type_cupcakes" id="cupcakes" name="cakes" /><label for="cupcakes">Cupcakes</label> <br>
+        <input type="checkbox" value="type_cheescakes" id="cheesecakes" name="cakes"/><label for="cheesecakes">Cheesecakes</label> <br>
+        <input type="checkbox" value="type_butter-cakes" id="butter_cakes" name="cakes" /><label for="butter-cakes">Butter Cakes</label> <br>
+        <input type="checkbox" value="type_mudcakes" id="mudcakes" name="cakes" /><label for="mudcakes">Mudcakes</label> <br>
       </div>
 
-      <div class="celbration-details">
-        <label>Celebration type:</label>
-        <input type="radio" value="celebration_birthday" id="birthday" name="birthday" /><label>Birthday</label>
-        <input type="radio" value="celebration_wedding" id="wedding" name="wedding" /><label>Wedding</label>
-        <input type="radio" value="celebration_corporate" id="corporate" name="corporate" /><label>Corporate</label>
-        <input type="radio" value="celebration_other" id="other" name="other" /><label>Other</label>
-        <input type="text" required />
+      <div class="celebration-details">
+        <label class="group-title">Celebration type:</label>
+        <input type="radio" value="celebration_birthday" id="birthday" name="celebration" /><label>Birthday</label><br>
+        <input type="radio" value="celebration_wedding" id="wedding" name="celebration" /><label>Wedding</label><br>
+        <input type="radio" value="celebration_corporate" id="corporate" name="celebration" /><label>Corporate</label><br>
+        <input type="radio" value="celebration_other" id="other" name="celebration" /><label>Other</label><br>
+        <input type="text" name="other" required />
       </div>
 
-      <label for="dream_cake">
-      <textarea></textarea>
-
-      <input type="submit" value="Send away"/> <input type="reset" value="Restart"/>
+      <div class="celebration-details">
+        <label for="dream_cake">tell us about your dream cake:</label>
+        <textarea></textarea>
+      </div>
+      <div class="form-confirm">
+        <input type="submit" value="Send away"/> <input type="reset" value="Restart"/>
+      </div>
     </fieldset>
 
   </form>
 
-</div>
 
 
 </body>
