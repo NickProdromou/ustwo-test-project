@@ -12,6 +12,9 @@ var uglify = require('gulp-uglify');
 //import the sass package
 var sass = require('gulp-sass');
 
+//import jshint to lint JavaScript
+var jshint = require('gulp-jshint');
+
 //default task runs when 'gulp' is typed.
 //gulp.task takes 2 parameters, a name (string) and a callback, describing what the task should do.
 gulp.task('test', function() {
@@ -19,7 +22,7 @@ gulp.task('test', function() {
 });
 
 //default task
-gulp.task('default',['scripts','styles','watch']);
+gulp.task('default',['scripts','styles','lint','watch']);
 
 gulp.task('server', function() {
   browsersync.init({
@@ -35,6 +38,12 @@ gulp.task('scripts', function() {
   .pipe(gulp.dest('build/js')) //save output to minjs
   .pipe(browsersync.stream())
 });
+
+gulp.task('lint',function() {
+  return gulp.src('build/js/*.js')
+  .pipe(jshint())
+  .pipe(jshint.reporter('default'));
+})
 
 // Styles task
 // magically turns css into sass

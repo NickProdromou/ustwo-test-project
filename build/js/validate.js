@@ -1,1 +1,1 @@
-var math=6;
+function validateOther(e){if(0===e.value.length)return!0}module.exports=validateOther;

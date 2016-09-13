@@ -1,2 +1,9 @@
+function validateOther(element) {
 
-var math = 2 + 4;
+  if (element.value.length === 0) {
+    return true;
+  }
+
+}
+
+module.exports = validateOther;

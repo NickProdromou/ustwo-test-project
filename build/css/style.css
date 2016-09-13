@@ -482,10 +482,7 @@ textarea {
   font-weight: 200;
   line-height: 1.5em;
   margin-left: .6em;
-}
-
-.celebration-details {
-  margin-top: .8em;
+  font-size: .9em;
 }
 
 .celebration-details input {
@@ -496,10 +493,11 @@ textarea {
   display: inline-block;
   font-weight: 200;
   margin-left: .6em;
+  font-size: .9em;
 }
 
 .celebration-details input, .celebration-details label {
-  line-height: 1.4em;
+  line-height: 1.8em;
 }
 
 .celebration-details input[type="text"] {
@@ -528,6 +526,7 @@ textarea {
   background: none;
   border: .2em solid #fff;
   padding: .225em .4em;
+  margin-right: .8em;
 }
 
 .form-confirm input[type="reset"] {
