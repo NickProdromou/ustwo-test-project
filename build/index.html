@@ -1,14 +1,59 @@
-<doctype HTML>
-
+<!DOCTYPE html>
+<html>
 <head>
-<link rel="stylesheet" type="text/css" href="css/style.css">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Test project for web engineer</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <div>
-    <h1>HELLO WORLD</h1>
-  </div>
+<div class="page-container">
+  <form>
+    <h1>Cake Enquiry Form</h1>
+    <fieldset>
+
+      <div class="contact-details">
+        <label for="enquiry_name" required>Name:</label>
+        <input type="text" id="enquiry_name" name="name" />
+        <label for="enquiry_email" name="email" required>Email:</label>
+        <input type="email" id="enquiry_email" name="email" />
+      </div>
+
+      <div class="cake-details">
+        <label>Type of cake:</label><br>
+        <input type="checkbox" value="type_cupcakes" id="cupcakes" name="cupcakes" /><label for="cupcakes">Cupcakes</label> <br>
+        <input type="checkbox" value="type_cheescakes" id="cheesecakes" name="cheesecakes"/><label for="cheesecakes">Cheesecakes</label> <br>
+        <input type="checkbox" value="type_butter-cakes" id="butter_cakes" name="buttercakes" /><label for="butter-cakes">Butter Cakes</label> <br>
+        <input type="checkbox" value="type_mudcakes" id="mudcakes" name="mudcakes" /><label for="mudcakes">Mudcakes</label> <br>
+      </div>
+
+      <div class="celbration-details">
+        <label>Celebration type:</label>
+        <input type="radio" value="celebration_birthday" id="birthday" name="birthday" /><label>Birthday</label>
+        <input type="radio" value="celebration_wedding" id="wedding" name="wedding" /><label>Wedding</label>
+        <input type="radio" value="celebration_corporate" id="corporate" name="corporate" /><label>Corporate</label>
+        <input type="radio" value="celebration_other" id="other" name="other" /><label>Other</label>
+        <input type="text" required />
+      </div>
+
+      <label for="dream_cake">
+      <textarea></textarea>
+
+      <input type="submit" value="Send away"/> <input type="reset" value="Restart"/>
+    </fieldset>
+
+  </form>
+
+</div>
 
 
 </body>
+
+
+
+
+<script src="js/validate.js"></script>
