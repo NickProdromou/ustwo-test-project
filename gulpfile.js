@@ -3,6 +3,7 @@ var gulp = require('gulp');
 
 //import browsersync create() method
 var browsersync = require('browser-sync').create();
+
 //save browsersync reload to a variable
 var reload = browsersync.reload;
 
